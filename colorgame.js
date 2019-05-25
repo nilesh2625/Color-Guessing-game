@@ -1,15 +1,15 @@
-var numSquares = 6;
-var colors = generateRandColor(numSquares);
-var squares = document.querySelectorAll(".square");
-var pickedColor = pickColor();
-var displayColor = document.getElementById("displayedColor");
-displayColor.textContent = pickedColor;
-var messageDisplay= document.getElementById("message");
-var h1 = document.querySelector("h1");
-var change = document.querySelector("#changeColor");
-var easyBtn = document.querySelector("#easyBtn");
-var hardBtn = document.querySelector("#hardBtn");
+var numSquares = 6,
+    colors = generateRandColor(numSquares),
+    squares = document.querySelectorAll(".square"),
+    pickedColor = pickColor(),
+    displayColor = document.getElementById("displayedColor"),
+    messageDisplay= document.getElementById("message"),
+    h1 = document.querySelector("h1"),
+    change = document.querySelector("#changeColor"),
+    easyBtn = document.querySelector("#easyBtn"),
+    hardBtn = document.querySelector("#hardBtn");
 
+displayColor.textContent = pickedColor;
 easyBtn.addEventListener("click", function(){
 	easyBtn.classList.add("selected");
 	hardBtn.classList.remove("selected");
